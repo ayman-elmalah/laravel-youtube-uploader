@@ -1,0 +1,31 @@
+{
+    "name": "ayman-elmalah/laravel-youtube-uploader",
+    "description": "The package will help you to upload videos to youtube and making youtube api much easier",
+    "type": "library",
+    "require": {
+        "google/apiclient": "^2.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayman Elmalah",
+            "email": "aymanelmalah77@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AymanElmalah\\YoutubeUploader\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "AymanElmalah\\YoutubeUploader\\YoutubeUploaderServiceProvider"
+          ],
+          "aliases": {
+              "Youtube": "AymanElmalah\\YoutubeUploader\\Facades\\Youtube"
+          }
+      }
+    }
+}
